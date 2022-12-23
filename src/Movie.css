@@ -1,0 +1,30 @@
+.movie {
+  margin-top: 20px;
+  padding: 20px;
+  width: 250px;
+  background-color: #eee;
+  border-radius: 15px;
+}
+
+.movie:not(:last-child) {
+  margin-right: 15px;
+}
+
+.movie:nth-child(3n) {
+  margin-right: 0;
+}
+
+.movie-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  display: -webkit-box;
+  height: 60px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

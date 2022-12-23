@@ -1,0 +1,6 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  max-width: 900px;
+}
