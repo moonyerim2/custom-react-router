@@ -14,7 +14,6 @@ function MovieList() {
         status,
         data: { movies },
       } = await response.json();
-
       if (status === "ok") setMovies(movies);
     })();
   }, []);
@@ -34,6 +33,7 @@ function MovieList() {
             return (
               <Movie
                 key={id}
+                id={id}
                 coverImg={medium_cover_image}
                 title={title}
                 description={description_full}
